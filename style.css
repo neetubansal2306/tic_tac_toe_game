@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: black;
+    color: white;
+    height: 50px;
+    padding: 12px 10px;
+    display: flex;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+.gamecontainer {
+    background-color: rgb(187, 187, 218);
+    color: black;
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
+    /* height: 90px; */
+    margin-top: 40px
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    justify-content: center;
+    /* padding: 0px 10px; */
+    position: relative;
+}
+
+.gamebox {
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gamebox:hover {
+    background-color: rgb(196, 238, 238);
+}
+
+.gameinfo {
+    padding: 12px;
+}
+
+.info {
+    padding: 12px;
+}
+.imgbox img{
+  width: 0;
+  transition: width 1s ease-in-out;
+}
+#reset {
+    margin: 12px;
+    padding: 5px;
+    border-radius: 8px;
+    background-color: rgb(213, 200, 225);
+    cursor: pointer;
+
+}
+#reset:hover{
+    background-color: azure;
+}
+.line{
+    position: absolute;
+    width: 25vw;
+    height: 3px;
+    background-color: black;
+    transform: translate() 1s ease-in-out;
+}
+.br-0 {
+    border-right: 0;
+}
+
+.bl-0 {
+    border-left: 0;
+}
+
+.bt-0 {
+    border-top: 0;
+}
+
+.bb-0 {
+    border-bottom: 0;
+}
